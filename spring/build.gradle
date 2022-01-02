@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation "net.devh:grpc-client-spring-boot-starter:${devhVersion}"
+    implementation "net.devh:grpc-server-spring-boot-starter:${devhVersion}"
+    implementation "io.grpc:grpc-netty:${grpcVersion}"
+    implementation "io.grpc:grpc-services:${grpcVersion}"
+
+    implementation project(':grpc')
+}

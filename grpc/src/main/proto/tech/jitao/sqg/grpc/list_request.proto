@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "ListRequestProto";
+
+package tech.jitao.sqg.grpc;
+
+message ListRequest {
+  uint32 current_page = 1;
+  uint32 page_size = 2;
+  string sort = 3;
+  string keyword = 4;
+}

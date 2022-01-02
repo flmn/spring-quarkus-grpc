@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    plugins {
+        id 'org.springframework.boot' version "${springVersion}"
+        id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+        id 'io.quarkus' version "${quarkusVersion}"
+        id 'com.google.protobuf' version '0.8.18'
+    }
+}
+
+rootProject.name = 'spring-quarkus-grpc'
+
+include "grpc"
+include "quarkus"
+include "spring"

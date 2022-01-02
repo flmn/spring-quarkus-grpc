@@ -1,0 +1,7 @@
+GET http://localhost:30001/ping
+
+###
+
+GET http://localhost:30002/ping
+
+###

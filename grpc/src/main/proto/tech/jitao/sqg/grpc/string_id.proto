@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "StringIdProto";
+
+package tech.jitao.sqg.grpc;
+
+message StringId {
+  string id = 1;
+}

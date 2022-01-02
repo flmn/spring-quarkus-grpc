@@ -1,0 +1,20 @@
+plugins {
+    id 'base'
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    group = 'tech.jitao.tech.jitao.sqg'
+    version = '0.0.1'
+    java {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+    repositories {
+        maven { url "https://mirrors.cloud.tencent.com/nexus/repository/maven-public/" }
+        mavenCentral()
+    }
+}
