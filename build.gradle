@@ -1,5 +1,11 @@
 plugins {
     id 'base'
+    id 'idea'
+}
+
+idea.project {
+    jdkName = 17
+    languageLevel = 17
 }
 
 subprojects {
